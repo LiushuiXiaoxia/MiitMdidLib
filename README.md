@@ -18,6 +18,8 @@ https://blog.csdn.net/haovip123/article/details/101679971
 
 ## 使用姿势
 
+[ ![Download](https://api.bintray.com/packages/liushuixiaoxia/maven/miit-mdid/images/download.svg?version=1.0.10) ](https://bintray.com/liushuixiaoxia/maven/miit-mdid/1.0.10/link)
+
 当前版本为`1.0.10`
 
 ```
