@@ -10,7 +10,7 @@ publish {
 
     userOrg = 'liushuixiaoxia'
     groupId = 'cn.mycommons'
-    artifactId = 'simple-android-base'
+    artifactId = 'miit-mdid'
     publishVersion = SDK_VERSION
 
     desc = 'Simple android base lib'
