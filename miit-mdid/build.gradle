@@ -1,18 +1,32 @@
 configurations.maybeCreate("default")
 artifacts.add("default", file('miit_mdid_1.0.10.aar'))
 
+//apply plugin: 'maven'
+//apply plugin: 'com.novoda.bintray-release'
+//publish {
+//    // uploadLib.sh
+//    bintrayUser = System.getenv("BINTRAY_USER")
+//    bintrayKey = System.getenv("BINTRAY_KEY")
+//
+//    userOrg = 'liushuixiaoxia'
+//    groupId = 'cn.mycommons'
+//    artifactId = 'miit-mdid'
+//    publishVersion = SDK_VERSION
+//
+//    desc = 'Android Miit Mdid Lib'
+//    website = 'https://github.com/LiushuiXiaoxia/MiitMdidLib'
+//}
+
+group = 'cn.mycommons'
+version = SDK_VERSION
+
 apply plugin: 'maven'
-apply plugin: 'com.novoda.bintray-release'
-publish {
-    // uploadLib.sh
-    bintrayUser = System.getenv("BINTRAY_USER")
-    bintrayKey = System.getenv("BINTRAY_KEY")
 
-    userOrg = 'liushuixiaoxia'
-    groupId = 'cn.mycommons'
-    artifactId = 'miit-mdid'
-    publishVersion = SDK_VERSION
-
-    desc = 'Android Miit Mdid Lib'
-    website = 'https://github.com/LiushuiXiaoxia/MiitMdidLib'
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri("${project.rootDir.absolutePath}/repo"))
+            pom.artifactId = 'miit-mdid'
+        }
+    }
 }
