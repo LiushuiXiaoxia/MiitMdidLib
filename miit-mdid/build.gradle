@@ -13,6 +13,6 @@ publish {
     artifactId = 'miit-mdid'
     publishVersion = SDK_VERSION
 
-    desc = 'Simple android base lib'
-    website = 'https://github.com/LiushuiXiaoxia/SimpleAndroidBase'
+    desc = 'Android Miit Mdid Lib'
+    website = 'https://github.com/LiushuiXiaoxia/MiitMdidLib'
 }
